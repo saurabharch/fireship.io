@@ -1,4 +1,6 @@
 # Fireship.io
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fsaurabharch%2Ffireship.io.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fsaurabharch%2Ffireship.io?ref=badge_shield)
+
 
 Content [designed](https://fireship.io/mission/) to increase developer happiness 😁 and productivity 🚀.
 
@@ -74,3 +76,6 @@ The CSS and JS required in critical path is located in `design`.
 ## Web Component Development
 
 Interactive features are built with Angular Elements web components in `components/`
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fsaurabharch%2Ffireship.io.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fsaurabharch%2Ffireship.io?ref=badge_large)
