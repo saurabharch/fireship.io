@@ -7,7 +7,9 @@
     "shell": "npm run build && firebase functions:shell",
     "start": "npm run shell",
     "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log"
+    "logs": "firebase functions:log",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "main": "lib/index.js",
   "dependencies": {
@@ -17,7 +19,8 @@
     "@types/google-cloud__pubsub": "^0.18.1",
     "firebase-admin": "~6.0.0",
     "firebase-functions": "^2.1.0",
-    "lodash": "^4.17.11"
+    "lodash": "^4.17.11",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@types/node-fetch": "^2.1.4",
@@ -27,5 +30,6 @@
   "private": true,
   "engines": {
     "node": "8"
-  }
+  },
+  "snyk": true
 }
