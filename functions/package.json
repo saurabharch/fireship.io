@@ -8,11 +8,13 @@
     "start": "npm run shell",
     "deploy": "firebase deploy --only functions",
     "logs": "firebase functions:log",
-    "test": "npx jest"
+    "test": "npx jest",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "main": "lib/index.js",
   "dependencies": {
-    "@google-cloud/pubsub": "^0.22.2",
+    "@google-cloud/pubsub": "^0.24.0",
     "@sendgrid/mail": "^6.3.1",
     "@slack/client": "^4.8.0",
     "@slack/events-api": "^2.3.0",
@@ -27,7 +29,8 @@
     "get-urls": "^8.0.0",
     "lodash": "^4.17.11",
     "stripe": "^6.36.0",
-    "tsscmp": "^1.0.6"
+    "tsscmp": "^1.0.6",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@types/coinbase-commerce-node": "^1.0.5",
@@ -45,5 +48,6 @@
   "private": true,
   "engines": {
     "node": "12"
-  }
+  },
+  "snyk": true
 }
